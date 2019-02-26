@@ -1,0 +1,7 @@
+.vscode
+.eslintrc*
+.jshintrc
+.editorconfig
+test/
+dx-libs-queue-*.tgz*
+coverage/

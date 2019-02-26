@@ -1,0 +1,38 @@
+{
+  "name": "@dx-libs/queue",
+  "version": "0.1.0",
+  "description": "Yet another simple task queue",
+  "author": "dx Team <team@daax.com.ar\n>",
+  "scripts": {
+    "eslint": "eslint src/**.js",
+    "test-watch": "jest ./test --collectCoverageFrom=./src/**.js --coverage --watchPathIgnorePatterns=.*\\.sonar.* --watchAll ",
+    "test": "jest ./test --collectCoverageFrom=./src/**.js --coverage",
+    "sonar": "sonar-scanner -Dsonar.projectKey=dx-libs-queue -Dsonar.sourceEncoding=UTF-8 -Dsonar.host.url=http://sonarqube:9000 -Dsonar.sources=./src -Dsonar.language=js -Dsonar.exclusions=**.test.js -Dsonar.tests=./test -Dsonar.test.inclusions=./test/**.test.js"
+  },
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "sinon": "^7.2.3"
+  },
+  "dependencies": {
+    "@dx-libs/timeout": "^0.1.1",
+    "dxlibs-collection": "^1.0.0",
+    "semaphore-async-await": "^1.5.1"
+  },
+  "keywords": [
+    "queue",
+    "tasks"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dx-libs/queue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dx-libs/queue/issues"
+  },
+  "homepage": "https://github.com/dx-libs/queue#readme"
+}
